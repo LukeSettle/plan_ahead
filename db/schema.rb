@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20180715194110) do
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.integer "plan_id"
-    t.datetime "start"
-    t.datetime "end"
-    t.string "type"
+    t.datetime "starts_at"
+    t.datetime "ends_at"
+    t.string "kind"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["plan_id"], name: "index_events_on_plan_id"

@@ -1,0 +1,19 @@
+<div class="events">
+  <div class="row event">
+    <div class="col-xs-3">
+      <%= t('model.event.labels.title') %>
+    </div>
+    <div class="col-xs-3">
+      <%= t('model.event.labels.kind') %>
+    </div>
+    <div class="col-xs-3">
+      <%= t('model.event.labels.starts_at') %>
+    </div>
+    <div class="col-xs-3">
+      <%= t('model.event.labels.ends_at') %>
+    </div>
+  </div>
+  <% events.each do |event| %>
+    <%= render 'shared/event', event: event %>
+  <% end %>
+</div>

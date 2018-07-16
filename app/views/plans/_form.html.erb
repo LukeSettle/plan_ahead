@@ -1,4 +1,7 @@
-<%= simple_form_for @plan do |f| %>
-  <%= f.input :title %>
-  <%= f.submit %>
-<% end %>
+<div class="form-group">
+  <%= simple_form_for @plan do |f| %>
+    <%= f.input :title, input_html: { class: 'form-control' } %>
+    <%= f.submit class: 'btn btn-primary' %>
+    <%= link_to t('crud.cancel'), plans_path, class: 'btn btn-default' %>
+  <% end %>
+</div>

@@ -11,6 +11,8 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create event_params
+    flash[:alert] = @event.errors if @event.errors.any?
+    redirect_to plan_path(event_params[:plan_id])
   end
 
   def show
@@ -29,10 +31,10 @@ class EventsController < ApplicationController
 
   protected
     def find_event
-      @event = event.find(params[:id])
+      @event = Event.find(params[:id])
     end
 
     def event_params
-      params.require(:plan).permit(:title, :type, :start, :end, :plan_id)
+      params.require(:event).permit(:title, :kind, :starts_at, :ends_at, :plan_id)
     end
 end

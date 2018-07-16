@@ -1,5 +1,16 @@
 .plan {
-  border: solid 1px #eee;
-  margin: 5px;
-  padding: 10px;
+  .plan-info {
+    border: solid 1px #eee;
+    padding: 10px;
+    margin: 10px 0px;
+  }
+}
+
+.plans-list {
+  .plan {
+    border: solid 1px #eee;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+  }
 }

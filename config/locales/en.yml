@@ -4,6 +4,7 @@ en:
     destroy: 'Destroy'
     create: 'Create'
     cancel: 'Cancel'
+    confirm: 'Are you sure you want to do this?'
   nav:
     create_plan: 'Create Plan'
     view_plans: 'View Plans'
@@ -18,4 +19,11 @@ en:
       titles:
         index: 'Plans'
     event:
+      labels:
+        title: 'Title'
+        kind: 'Kind'
+        start: 'Start'
+        end: 'End'
       add: 'Add Event'
+      errors:
+        starts_before_ends: 'This events starts at value is after the ends at value'

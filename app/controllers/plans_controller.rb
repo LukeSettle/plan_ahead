@@ -25,7 +25,8 @@ class PlansController < ApplicationController
   end
 
   def destroy
-    @plan.destroy
+    @plan.delete
+    redirect_to plans_path
   end
 
   protected
