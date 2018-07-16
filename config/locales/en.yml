@@ -1,0 +1,21 @@
+en:
+  crud:
+    edit: 'Edit'
+    destroy: 'Destroy'
+    create: 'Create'
+    cancel: 'Cancel'
+  nav:
+    create_plan: 'Create Plan'
+    view_plans: 'View Plans'
+    manifesto: 'Manifesto'
+    help: 'Help'
+  application:
+    title: 'Plan Ahead'
+  home:
+    welcome_text: 'Detailed travel planning application'
+  model:
+    plan:
+      titles:
+        index: 'Plans'
+    event:
+      add: 'Add Event'

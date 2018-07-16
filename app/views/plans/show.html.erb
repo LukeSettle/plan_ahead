@@ -1,0 +1,21 @@
+<div class="plan">
+  <%= @plan.title %>
+  <div class="events">
+    <% @plan.events.each do |plan| %>
+      <div class="row event">
+        <div class="col-xs-3">
+          <%= event.title %>
+        </div>
+        <div class="col-xs-3">
+          <%= event.type %>
+        </div>
+        <div class="col-xs-3">
+          <%= event.start.strftime('%F') %>
+        </div>
+        <div class="col-xs-3">
+          <%= event.end.strftime('%F') %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

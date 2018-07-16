@@ -1,0 +1,17 @@
+<h1 class="text-center">
+  <%= t('model.plan.titles.index') %>
+</h1>
+<div class="plans-list">
+  <% @plans.each do |plan| %>
+    <div class="row plan">
+      <div class="col-xs-12">
+        <%= link_to plan.title, plan_path(plan) %>
+        <div class="actions pull-right">
+          <%= link_to t('model.event.add'), new_event_path, class: 'btn btn-primary' %>
+          <%= link_to t('crud.edit'), edit_plan_path(plan), class: 'btn btn-primary' %>
+          <%= link_to t('crud.delete'), plans_path(plan), method: :destroy, class: 'btn btn-danger' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

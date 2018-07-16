@@ -1,0 +1,1722 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/* line 9, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 9, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 19, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 16, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+body {
+  margin: 0;
+}
+
+/* line 33, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 21, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 54, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 38, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 67, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 47, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 77, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 53, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 89, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 59, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+a {
+  background-color: transparent;
+}
+
+/* line 98, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 64, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 110, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 70, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 118, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 75, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 127, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 81, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+dfn {
+  font-style: italic;
+}
+
+/* line 136, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 86, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 145, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 92, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 154, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 98, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+small {
+  font-size: 80%;
+}
+
+/* line 162, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 103, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 112, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 117, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 185, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 122, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+img {
+  border: 0;
+}
+
+/* line 193, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 127, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 204, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 132, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 212, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 137, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 221, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 143, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+pre {
+  overflow: auto;
+}
+
+/* line 229, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 148, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 252, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 157, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 266, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 168, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button {
+  overflow: visible;
+}
+
+/* line 277, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 173, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 290, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 179, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 302, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 188, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 311, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 194, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 322, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 201, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+input {
+  line-height: normal;
+}
+
+/* line 334, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 206, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 346, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 213, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 356, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 219, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 367, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 225, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 376, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 231, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 387, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 238, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 396, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 244, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+textarea {
+  overflow: auto;
+}
+
+/* line 405, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 249, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 416, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 254, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_normalize.scss */
+/* line 260, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+td,
+th {
+  padding: 0;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print {
+  /* line 9, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 268, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 18, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 278, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 23, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 284, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 27, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 289, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 33, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 294, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 38, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 300, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 44, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 307, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 48, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 312, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 53, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 318, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 57, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 323, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  p,
+  h2,
+  h3,
+  .list-title .title {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 64, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 332, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  h2,
+  h3,
+  .list-title .title {
+    page-break-after: avoid;
+  }
+
+  /* line 72, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 339, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .navbar {
+    display: none;
+  }
+
+  /* line 77, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 344, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+
+  /* line 81, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 350, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .label {
+    border: 1px solid #000;
+  }
+
+  /* line 85, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 355, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .table {
+    border-collapse: collapse !important;
+  }
+
+  /* line 88, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 359, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+
+  /* line 94, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_print.scss */
+  /* line 365, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+/* line 370, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 14, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+/* line 375, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+/* line 380, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.row:after {
+  clear: both;
+}
+
+/* line 11, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 385, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 27, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 393, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 398, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 403, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 408, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 413, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 418, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 423, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 428, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 433, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 438, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 443, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 448, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+/* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 453, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 55, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 458, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 463, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 468, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 473, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 478, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 483, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 488, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 493, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 498, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 503, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 508, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 513, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+/* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 518, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 45, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 523, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 528, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 533, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 538, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 543, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 548, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 553, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 558, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 563, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 568, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 573, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 578, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+/* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 583, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 588, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 593, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 598, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 603, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 608, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 613, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 618, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 623, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 628, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 633, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 638, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 643, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+/* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+/* line 648, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 27, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 654, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 659, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 664, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 669, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 674, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 679, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 684, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 689, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 694, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 699, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 704, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 709, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 714, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 55, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 719, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 724, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 729, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 734, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 739, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 744, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 749, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 754, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 759, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 764, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 769, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 774, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 779, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 45, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 784, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 789, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 794, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 799, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 804, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 809, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 814, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 819, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 824, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 829, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 834, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 839, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 844, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 849, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 854, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 859, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 864, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 869, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 874, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 879, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 884, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 889, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 894, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 899, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 904, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 909, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 27, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 915, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 920, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 925, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 930, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 935, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 940, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 945, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 950, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 955, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 960, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 965, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 970, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 975, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 55, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 980, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 985, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 990, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 995, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1000, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1005, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1010, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1015, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1020, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1025, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1030, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1035, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1040, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 45, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1045, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1050, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1055, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1060, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1065, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1070, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1075, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1080, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1085, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1090, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1095, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1100, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1105, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1110, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1115, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1120, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1125, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1130, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1135, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1140, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1145, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1150, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1155, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1160, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1165, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1170, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 27, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1176, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1181, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1186, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1191, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1196, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1201, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1206, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1211, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1216, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1221, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1226, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1231, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 35, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1236, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 55, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1241, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1246, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1251, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1256, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1261, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1266, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1271, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1276, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1281, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1286, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1291, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1296, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 50, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1301, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 45, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1306, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1311, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1316, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1321, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1326, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1331, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1336, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1341, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1346, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1351, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1356, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1361, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 40, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1366, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1371, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1376, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1381, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1386, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1391, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1396, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1401, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1406, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1411, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1416, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1421, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1426, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 60, /Users/lukesettle/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
+  /* line 1431, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/bootstrap.css */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+/* line 1, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/modules/nav.scss */
+.navigation {
+  color: white !important;
+  border-radius: 5px;
+  background-color: #1ae2ae;
+  text-align: center;
+  padding: 3px;
+  margin: 5px;
+}
+/* line 9, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/modules/nav.scss */
+.navigation .nav-brand {
+  font-size: 30px;
+}
+/* line 13, /Users/lukesettle/Desktop/plan_ahead/app/assets/stylesheets/modules/nav.scss */
+.navigation .nav-button {
+  padding-top: 5px;
+}
