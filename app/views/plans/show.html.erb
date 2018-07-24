@@ -1,7 +1,17 @@
 <div class="plan">
+  <div class="row header">
+    <div class="col-xs-12">
+      <span class="title">
+        <%= @plan.title %>
+      </span>
+      <span class="pull-right">
+        <%= link_to t('model.event.add'), new_event_path(plan_id: @plan.id), class: 'btn btn-primary' %>
+      </span>
+    </div>
+  </div>
   <div class="row plan-info">
     <div class="col-xs-3">
-      <%= t('model.plan.labels.title') %>: <%= @plan.title %>
+      <%= t('model.plan.labels.total_price') %>: <%= @plan.total_price %>
     </div>
     <div class="col-xs-3">
       <%= t('model.plan.labels.total_time') %>: <%= @plan.total_time %>

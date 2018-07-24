@@ -10,9 +10,13 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.create event_params
-    flash[:alert] = @event.errors if @event.errors.any?
-    redirect_to plan_path(event_params[:plan_id])
+    @event = Event.new event_params
+    if @event.save
+      redirect_to plan_path(event_params[:plan_id])
+    else
+      flash[:alert] = @event.errors if @event.errors.any?
+      redirect_to :back
+    end
   end
 
   def show
@@ -22,7 +26,12 @@ class EventsController < ApplicationController
   end
 
   def update
-    @event.update(event_params)
+    if @event.update(event_params)
+      redirect_to event_path(params[:id])
+    else
+      flash[:alert] = @event.errors if @event.errors.any?
+      redirect_to edit_event_path(params[:id])
+    end
   end
 
   def destroy
@@ -35,6 +44,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :kind, :starts_at, :ends_at, :plan_id)
+      params.require(:event).permit(:title, :kind, :price, :link, :starts_at, :ends_at, :plan_id)
     end
 end

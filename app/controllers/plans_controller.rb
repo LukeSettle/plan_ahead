@@ -2,7 +2,7 @@ class PlansController < ApplicationController
   before_action :find_plan, except: [:index, :create, :new]
 
   def index
-    @plans = Plan.all
+    @plans = Plan.all.includes(:events)
   end
 
   def new

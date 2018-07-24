@@ -1,4 +1,13 @@
 .plan {
+  .header {
+    margin-top: 5px;
+
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
   .plan-info {
     border: solid 1px #eee;
     padding: 10px;

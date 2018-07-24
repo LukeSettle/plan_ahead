@@ -24,6 +24,7 @@ en:
         kind: 'Kind'
         start: 'Start'
         end: 'End'
+        total_price: 'Total Price'
       add: 'Add Event'
       errors:
         starts_before_ends: 'This events starts at value is after the ends at value'

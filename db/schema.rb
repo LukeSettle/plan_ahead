@@ -18,6 +18,9 @@ ActiveRecord::Schema.define(version: 20180715194110) do
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.string "kind"
+    t.float "price"
+    t.string "currency"
+    t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["plan_id"], name: "index_events_on_plan_id"

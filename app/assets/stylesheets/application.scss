@@ -7,3 +7,17 @@
 body {
   margin: 0px 200px;
 }
+
+.alert {
+  color: white;
+  padding: 5px;
+  margin: 10px;
+}
+
+.alert-notice {
+  background-color: green;
+}
+
+.alert-alert {
+  background-color: red;
+}

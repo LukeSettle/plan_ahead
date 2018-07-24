@@ -4,6 +4,7 @@ class Event < ApplicationRecord
   belongs_to :plan
 
   enumerize :kind, in: [:travel, :activity]
+  enumerize :currency, in: [:us_dollar, :euro, :pound], default: :us_dollar
 
   validate :starts_before_ends
 
@@ -13,6 +14,6 @@ class Event < ApplicationRecord
 
   protected
     def starts_before_ends
-      errors.add(:starts_at, I18n.t('model.event.errors.starts_before_ends')) if starts_at > ends_at
+      errors.add(:base, I18n.t('model.event.errors.starts_before_ends')) if starts_at > ends_at
     end
 end

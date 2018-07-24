@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'simple_form'
 gem 'jquery-rails'
+gem "onebox"
 
 group :development, :test do
   gem 'pry'
