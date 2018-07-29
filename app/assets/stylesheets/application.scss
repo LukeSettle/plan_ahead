@@ -1,12 +1,13 @@
 //= require_self
 //
 
-@import "bootstrap/overrides",
-        "bootstrap",
-        "modules/*";
-body {
-  margin: 0px 200px;
-}
+$brand-primary: #29deb4;
+$link-color: darken($brand-primary, 10%);
+
+@import 'modules/*',
+        'bootstrap',
+        'tempusdominus-bootstrap-4.css',
+        'font-awesome';
 
 .alert {
   color: white;

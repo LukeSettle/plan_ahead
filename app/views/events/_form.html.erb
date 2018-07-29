@@ -1,13 +1,17 @@
-<div class="form-group">
+<div class="container form-group">
   <%= simple_form_for @event do |f| %>
-    <%= f.hidden_field :plan_id, value: @event.plan_id || params[:plan_id] %>
-    <%= f.input :title, input_html: { class: 'form-control' } %>
-    <%= f.input :kind, input_html: { class: 'form-control' } %>
-    <%= f.input :link %>
-    <%= f.input :starts_at %>
-    <%= f.input :ends_at %>
-    <%= f.input :price %>
-    <%= f.submit class: 'btn btn-primary' %>
-    <%= link_to t('crud.cancel'), plans_path, class: 'btn btn-default' %>
+    <div class="form-inputs">
+      <%= f.hidden_field :plan_id, value: @event.plan_id || params[:plan_id] %>
+      <!-- <%= f.input :title %>
+      <%= f.input :kind %> -->
+      <%= f.input :link %>
+      <!-- <%= f.input :starts_at, as: :date_time_picker, id: 'event_starts_at' %>
+      <%= f.input :ends_at, as: :date_time_picker, id: 'event_ends_at' %>
+      <%= f.input :price %> -->
+    </div>
+    <div class="form-actions">
+      <%= f.submit class: 'btn btn-primary' %>
+      <%= link_to t('crud.cancel'), plans_path, class: 'btn btn-default' %>
+    </div>
   <% end %>
 </div>

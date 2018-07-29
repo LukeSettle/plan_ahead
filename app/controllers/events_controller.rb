@@ -15,7 +15,6 @@ class EventsController < ApplicationController
       redirect_to plan_path(event_params[:plan_id])
     else
       flash[:alert] = @event.errors if @event.errors.any?
-      redirect_to :back
     end
   end
 

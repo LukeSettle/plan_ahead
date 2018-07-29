@@ -1,10 +1,9 @@
-<div class="plans-list">
+<div class="container plans-list">
   <% @plans.each do |plan| %>
     <div class="row plan">
-      <div class="col-xs-12">
-        <%= link_to plan.title, plan_path(plan) %>
-        <div class="actions pull-right">
-          <%= link_to t('model.event.add'), new_event_path(plan_id: plan.id), class: 'btn btn-primary' %>
+      <div class="col-md">
+        <%= render 'details', plan: plan %>
+        <div class="actions float-sm-right">
           <%= link_to t('crud.edit'), edit_plan_path(plan), class: 'btn btn-primary' %>
           <%= link_to t('crud.delete'), plan_path(plan), method: :delete, class: 'btn btn-danger', data: { confirm: t('crud.confirm') } %>
         </div>

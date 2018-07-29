@@ -1,19 +1,23 @@
-<div class="events">
+<table class="table events">
   <% if events.any? %>
-    <div class="row event">
-      <div class="col-xs-3">
+    <h3 class="text-center"><%= t('model.plan.titles.scheduled_events') %></h3>
+    <thead class="event">
+      <th>
         <%= t('model.event.labels.title') %>
-      </div>
-      <div class="col-xs-3">
+      </th>
+      <th>
         <%= t('model.event.labels.kind') %>
-      </div>
-      <div class="col-xs-3">
+      </th>
+      <th>
         <%= t('model.event.labels.starts_at') %>
-      </div>
-      <div class="col-xs-3">
+      </th>
+      <th>
         <%= t('model.event.labels.ends_at') %>
-      </div>
-    </div>
+      </th>
+      <th>
+        <%= t('model.event.labels.price') %>
+      </th>
+    </thead>
   <% end %>
   <% events.each do |event| %>
     <%= render 'shared/event', event: event %>

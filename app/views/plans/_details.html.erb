@@ -1,0 +1,24 @@
+<div class="row header">
+  <div class="col-xl">
+    <span class="title">
+      <%= link_to plan.title, plan_path(plan) %>
+    </span>
+    <div class="float-sm-right">
+      <%= link_to t('model.event.add'), new_event_path(plan_id: plan.id), class: 'btn btn-primary' %>
+    </div>
+  </div>
+</div>
+<div class="row plan-info">
+  <div class="col-md">
+    <%= t('model.plan.labels.total_price') %>: <%= plan.total_price %>
+  </div>
+  <div class="col-md">
+    <%= t('model.plan.labels.total_time') %>: <%= plan.total_time %>
+  </div>
+  <div class="col-md">
+    <%= t('model.plan.labels.start') %>: <%= format_datetime plan.events.first.try(:starts_at) %>
+  </div>
+  <div class="col-md">
+    <%= t('model.plan.labels.end') %>: <%= format_datetime plan.events.last.try(:ends_at) %>
+  </div>
+</div>

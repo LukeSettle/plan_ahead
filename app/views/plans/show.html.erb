@@ -1,27 +1,4 @@
-<div class="plan">
-  <div class="row header">
-    <div class="col-xs-12">
-      <span class="title">
-        <%= @plan.title %>
-      </span>
-      <span class="pull-right">
-        <%= link_to t('model.event.add'), new_event_path(plan_id: @plan.id), class: 'btn btn-primary' %>
-      </span>
-    </div>
-  </div>
-  <div class="row plan-info">
-    <div class="col-xs-3">
-      <%= t('model.plan.labels.total_price') %>: <%= @plan.total_price %>
-    </div>
-    <div class="col-xs-3">
-      <%= t('model.plan.labels.total_time') %>: <%= @plan.total_time %>
-    </div>
-    <div class="col-xs-3">
-      <%= t('model.plan.labels.start') %>: <%= format_datetime @plan.events.first.try(:starts_at) %>
-    </div>
-    <div class="col-xs-3">
-      <%= t('model.plan.labels.end') %>: <%= format_datetime @plan.events.last.try(:ends_at) %>
-    </div>
-  </div>
+<div class="container plan">
+  <%= render 'details', plan: @plan %>
   <%= render 'shared/events_list', events: @plan.events %>
 </div>
