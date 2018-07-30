@@ -6,7 +6,12 @@ class EventsController < ApplicationController
   end
 
   def new
-    @event = Event.new
+    if params[:found_attributes]
+      @event = Event.new(params[:found_attributes])
+    else
+      @event = Event.new
+    end
+    @attributes = params[:attributes]
   end
 
   def create
@@ -14,7 +19,9 @@ class EventsController < ApplicationController
     if @event.save
       redirect_to plan_path(event_params[:plan_id])
     else
-      flash[:alert] = @event.errors if @event.errors.any?
+      attributes_not_found = @event.errors.details.select { |_attribute, message| message.first[:error] == :blank }.map(&:first)
+      found_attributes = @event.attributes.select { |key, value| value.present? }
+      redirect_to new_event_path(plan_id: event_params[:plan_id], attributes: attributes_not_found, event: found_attributes)
     end
   end
 

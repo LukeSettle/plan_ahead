@@ -7,9 +7,6 @@
 #= require_tree .
 
 $(document).ready ->
-  $('.form_datetime').datetimepicker({
-    autoclose: true,
-    todayBtn: true,
-    pickerPosition: "bottom-left",
-    format: 'mm-dd-yyyy hh:ii'
+  $('#my_object_end_date').datetimepicker({
+    format: "YYYY-MM-DD HH:mm Z"
   });

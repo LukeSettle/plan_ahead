@@ -2,12 +2,18 @@
   <%= simple_form_for @event do |f| %>
     <div class="form-inputs">
       <%= f.hidden_field :plan_id, value: @event.plan_id || params[:plan_id] %>
-      <!-- <%= f.input :title %>
-      <%= f.input :kind %> -->
-      <%= f.input :link %>
-      <!-- <%= f.input :starts_at, as: :date_time_picker, id: 'event_starts_at' %>
-      <%= f.input :ends_at, as: :date_time_picker, id: 'event_ends_at' %>
-      <%= f.input :price %> -->
+      <% if @attributes.present? %>
+        <% @attributes.each do |attribute| %>
+          <% if attribute == 'starts_at' || attribute == 'ends_at' %>
+            <%= f.input attribute, as: :date_time_picker, id: "event_#{attribute}" %>
+          <% else %>
+            <%= f.input attribute %>
+          <% end %>
+        <% end %>
+      <% else %>
+        <%= f.input :kind %>
+        <%= f.input :link %>
+      <% end %>
     </div>
     <div class="form-actions">
       <%= f.submit class: 'btn btn-primary' %>

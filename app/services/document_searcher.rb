@@ -17,6 +17,11 @@ class DocumentSearcher
     }
   end
 
+  def self.uri_params
+    binding.pry
+    Rack::Utils.parse_nested_query(@uri.request_uri)
+  end
+
   protected
     def self.wait
       @wait ||= Selenium::WebDriver::Wait.new(:timeout => 20)

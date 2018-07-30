@@ -1,24 +1,23 @@
 class DateTimePickerInput < SimpleForm::Inputs::Base
-  def input
-    template.content_tag(:div, class: 'input-group date form_datetime') do
+  def input(wrapper_options)
+    template.content_tag(:div, class: 'input-group date', data: { target_input: 'nearest' }, id: "#{object_name}_#{attribute_name}") do
       template.concat @builder.text_field(attribute_name, input_html_options)
-      template.concat span_remove
-      template.concat span_table
+      template.concat div_button
     end
   end
 
   def input_html_options
-    super.merge({class: 'form-control', readonly: true})
+    super.merge({class: 'form-control datetimepicker-input'})
   end
 
-  def span_remove
-    template.content_tag(:span, class: 'input-group-addon') do
-      template.concat icon_remove
+  def div_button
+    template.content_tag(:div, class: 'input-group-append', data: {target: "##{object_name}_#{attribute_name}", toggle: 'datetimepicker'} ) do
+      template.concat span_table
     end
   end
 
   def span_table
-    template.content_tag(:span, class: 'input-group-addon') do
+    template.content_tag(:div, class: 'input-group-text') do
       template.concat icon_table
     end
   end
@@ -28,7 +27,6 @@ class DateTimePickerInput < SimpleForm::Inputs::Base
   end
 
   def icon_table
-    "<i class='glyphicon glyphicon-th'></i>".html_safe
+    "<i class='fa fa-calendar'></i>".html_safe
   end
-
 end
