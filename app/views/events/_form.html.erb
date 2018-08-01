@@ -3,6 +3,9 @@
     <div class="form-inputs">
       <%= f.hidden_field :plan_id, value: @event.plan_id || params[:plan_id] %>
       <% if @attributes.present? %>
+        <% (@event.attributes.keys - @attributes).each do |attribute| %>
+          <%= f.hidden_field attribute %>
+        <% end %>
         <% @attributes.each do |attribute| %>
           <% if attribute == 'starts_at' || attribute == 'ends_at' %>
             <%= f.input attribute, as: :date_time_picker, id: "event_#{attribute}" %>

@@ -16,9 +16,9 @@ class WebPageSearch
     event_hash = {}
     EVENT_ATTRIBUTES.each do |attribute|
       value = if @site
-                "#{attribute.camelize}Finder".constantize.send("find_#{attribute}_on_#{@site}")
+                "#{attribute.camelize}Finder".constantize.new(@uri).send("find_#{attribute}_on_#{@site}")
               else
-                "#{attribute.camelize}Finder".constantize.send("find_#{attribute}_on_default")
+                "#{attribute.camelize}Finder".constantize.new(@uri).send("find_#{attribute}_on_default")
               end
       event_hash.merge!(attribute => value) unless value.blank?
     end

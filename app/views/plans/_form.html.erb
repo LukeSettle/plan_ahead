@@ -1,6 +1,6 @@
 <div class="container form-group">
   <%= simple_form_for @plan do |f| %>
-    <%= f.input :title, input_html: { class: 'form-control' } %>
+    <%= f.input :title, placeholder: t('model.plan.title_placeholder'), label: t('model.plan.title'), input_html: { class: 'form-control' } %>
     <%= f.submit class: 'btn btn-primary' %>
     <%= link_to t('crud.cancel'), plans_path, class: 'btn btn-default' %>
   <% end %>

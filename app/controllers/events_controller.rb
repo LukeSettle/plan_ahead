@@ -6,8 +6,8 @@ class EventsController < ApplicationController
   end
 
   def new
-    if params[:found_attributes]
-      @event = Event.new(params[:found_attributes])
+    if params[:event].present?
+      @event = Event.new(event_params)
     else
       @event = Event.new
     end
@@ -50,6 +50,6 @@ class EventsController < ApplicationController
     end
 
     def event_params
-      params.require(:event).permit(:title, :kind, :price, :link, :starts_at, :ends_at, :plan_id)
+      params.require(:event).permit(:title, :kind, :price, :link, :starts_at, :ends_at, :plan_id, :currency)
     end
 end

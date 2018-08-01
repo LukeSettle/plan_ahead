@@ -16,6 +16,8 @@ en:
     welcome_text: 'Detailed travel planning application'
   model:
     plan:
+      title: 'Title'
+      title_placeholder: 'Add a title for your trip to get started'
       titles:
         index: 'Plans'
         scheduled_events: 'Your scheduled events'

@@ -13,7 +13,7 @@
     <%= t('model.plan.labels.total_price') %>: <%= plan.total_price %>
   </div>
   <div class="col-md">
-    <%= t('model.plan.labels.total_time') %>: <%= plan.total_time %>
+    <%= t('model.plan.labels.total_time') %>: <%= plan.total_time_in_words %>
   </div>
   <div class="col-md">
     <%= t('model.plan.labels.start') %>: <%= format_datetime plan.events.first.try(:starts_at) %>

@@ -22,6 +22,7 @@ class Event < ApplicationRecord
     end
 
     def search_for_fields
+      return if link.present? && title.present?
       found_attributes = web_page_search.search_for_attributes
       assign_attributes(found_attributes)
     end
