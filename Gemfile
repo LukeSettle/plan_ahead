@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails', '~> 5.1.6'
-gem 'sqlite3'
+gem 'pg'
 gem 'puma', '~> 3.7'
 gem 'enumerize'
 gem 'selectize-rails'
@@ -22,6 +22,7 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'bootstrap4-datetime-picker-rails'
 gem 'momentjs-rails'
 gem 'selenium-webdriver'
+gem 'faraday'
 
 group :development, :test do
   gem 'pry'

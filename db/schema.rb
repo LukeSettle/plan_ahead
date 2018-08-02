@@ -10,11 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180715194110) do
+ActiveRecord::Schema.define(version: 20180802022017) do
 
-  create_table "events", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "parent_events", force: :cascade do |t|
     t.string "title"
-    t.integer "plan_id"
+    t.bigint "plan_id"
     t.datetime "starts_at"
     t.datetime "ends_at"
     t.string "kind"
@@ -23,13 +26,26 @@ ActiveRecord::Schema.define(version: 20180715194110) do
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["plan_id"], name: "index_events_on_plan_id"
+    t.index ["plan_id"], name: "index_parent_events_on_plan_id"
   end
 
   create_table "plans", force: :cascade do |t|
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "travel_events", force: :cascade do |t|
+    t.bigint "parent_event_id"
+    t.string "origin"
+    t.string "destination"
+    t.datetime "departure_time"
+    t.datetime "arrival_time"
+    t.string "mode_of_transportation"
+    t.jsonb "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["parent_event_id"], name: "index_travel_events_on_parent_event_id"
   end
 
 end

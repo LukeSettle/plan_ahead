@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_event_id: 1
+  origin: MyString
+  destination: MyString
+  departure_time: 2018-08-01 22:20:17
+  arrival_time: 2018-08-01 22:20:17
+  mode_of_transportation: MyString
+
+two:
+  parent_event_id: 1
+  origin: MyString
+  destination: MyString
+  departure_time: 2018-08-01 22:20:17
+  arrival_time: 2018-08-01 22:20:17
+  mode_of_transportation: MyString

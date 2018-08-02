@@ -4,7 +4,7 @@
       <%= link_to plan.title, plan_path(plan) %>
     </span>
     <div class="float-sm-right">
-      <%= link_to t('model.event.add'), new_event_path(plan_id: plan.id), class: 'btn btn-primary' %>
+      <%= link_to t('model.event.add'), new_parent_event_path(plan_id: plan.id), class: 'btn btn-primary' %>
     </div>
   </div>
 </div>

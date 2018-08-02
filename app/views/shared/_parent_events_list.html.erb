@@ -1,5 +1,5 @@
 <table class="table events">
-  <% if events.any? %>
+  <% if parent_events.any? %>
     <h3 class="text-center"><%= t('model.plan.titles.scheduled_events') %></h3>
     <thead class="event">
       <th>
@@ -19,7 +19,7 @@
       </th>
     </thead>
   <% end %>
-  <% events.each do |event| %>
-    <%= render 'shared/event', event: event %>
+  <% parent_events.each do |parent_event| %>
+    <%= render 'shared/parent_event', parent_event: parent_event %>
   <% end %>
 </div>

@@ -2,7 +2,7 @@ class PlansController < ApplicationController
   before_action :find_plan, except: [:index, :create, :new]
 
   def index
-    @plans = Plan.all.includes(:events)
+    @plans = Plan.all.includes(:parent_events)
   end
 
   def new
@@ -35,6 +35,6 @@ class PlansController < ApplicationController
     end
 
     def plan_params
-      params.require(:plan).permit(:title, event_attributes: [:title, :type, :start, :end])
+      params.require(:plan).permit(:title)
     end
 end

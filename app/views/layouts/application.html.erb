@@ -3,7 +3,6 @@
   <head>
     <title>PlanAhead</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,5 +13,6 @@
       <%= render 'shared/flash' %>
       <%= yield %>
     </div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=<%= Rails.application.secrets[:google_directions_api_key] %>&callback=initMap" type="text/javascript"></script>
   </body>
 </html>
