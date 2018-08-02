@@ -1,8 +1,8 @@
 class PlansController < ApplicationController
-  before_action :find_plan, except: [:index, :create, :new]
+  before_action :find_plan, except: [:index, :create, :new, :continue_to_event_creation]
 
   def index
-    @plans = Plan.all.includes(:parent_events)
+    @plans = Plan.all
   end
 
   def new
@@ -27,6 +27,13 @@ class PlansController < ApplicationController
   def destroy
     @plan.delete
     redirect_to plans_path
+  end
+
+  def new_event
+  end
+
+  def continue_to_event_creation
+    redirect_to send("new_#{params[:kind]}_event_path", plan_id: params[:plan_id])
   end
 
   protected

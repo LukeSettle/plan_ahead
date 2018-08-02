@@ -22,14 +22,9 @@ en:
         index: 'Plans'
         scheduled_events: 'Your scheduled events'
       create: 'Create Plan'
-    event:
-      labels:
-        title: 'Title'
-        kind: 'Type'
-        start: 'Start'
-        end: 'End'
-        total_price: 'Total Price'
+    travel_event:
+      created: 'A travel event has been added to your plan!'
+    parent_event:
+      kind_explination: 'What kind of event would you like to add to your trip?'
       add: 'Add Event'
       have_a_link: 'Already have a link to an event?'
-      errors:
-        starts_before_ends: 'This events starts at value is after the ends at value'

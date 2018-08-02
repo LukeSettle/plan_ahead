@@ -15,10 +15,10 @@ class TravelEventsController < ApplicationController
     @travel_event = TravelEvent.new(travel_event_params)
     if @travel_event.save
       flash[:notice] = t('model.travel_event.created')
-      render 'show'
+      redirect_to plan_path(@travel_event.plan)
     else
       flash[:alert] = @travel_event.errors.messages
-      render 'new'
+      redirect_to new_travel_event_path(@travel_event, parent_event_id: @travel_event.parent_event_id)
     end
   end
 
@@ -39,7 +39,7 @@ class TravelEventsController < ApplicationController
 
   protected
     def travel_event_params
-      params.require(:travel_event).permit(:origin, :destination, :mode_of_transportation, :parent_event_id)
+      params.require(:travel_event).permit(:origin, :destination, :mode_of_transportation, :data, :plan_id).merge(data: JSON.parse(params[:travel_event][:data]))
     end
 
     def find_travel_event

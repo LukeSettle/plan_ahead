@@ -1,0 +1,5 @@
+<%= form_with url: plan_continue_to_event_creation_path(plan_id: params[:id]) do |f| %>
+  <%= f.hidden_field :plan_id, value: params[:id] %>
+  <%= label_tag t('model.parent_event.kind_explination') %>
+  <%= f.select :kind, options_for_select(ParentEvent.kind.values), { include_blank: true }, { class: 'form-control', id: 'event-kind' } %>
+<% end %>

@@ -1,5 +1,5 @@
 window.initMap = ->
-  directionsService = new google.maps.DirectionsService();
+  return unless $('#map').length > 0
   directionsDisplay = new google.maps.DirectionsRenderer();
   chicago = new google.maps.LatLng(41.850033, -87.6500523);
   mapOptions =
@@ -8,28 +8,25 @@ window.initMap = ->
 
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
   directionsDisplay.setMap(map);
-  directions = $('.travel_event').data('directions')
-
-
-  northeast = directions.routes[0].bounds.northeast
-  southwest = directions.routes[0].bounds.southwest
-  directions.routes[0].bounds = { b: { b: northeast.lat, f: northeast.lng }, f: { b: southwest.lat, f: southwest.lng } }
-  console.log directions
-  request = {
-    origin: 'London',
-    destination: 'Paris',
-    travelMode: 'DRIVING'
-  };
-
-  directionsService.route request, (result, status) ->
-    console.log result
-  directionsDisplay.setDirections(directions);
+  directions = $('#travel_event').data('directions')
+  directionsDisplay.setDirections(directions)
 
 $ ->
-  $('#parent_event_kind').on 'change', ->
-    $('#new_parent_event').submit()
-    console.log 'form submitted'
+  $('#create-travel-event').on 'click', (event) ->
+    event.preventDefault()
+    form = $('#new_travel_event')
+    request =
+      origin: $('#travel_event_origin').val()
+      destination: $('#travel_event_destination').val()
+      travelMode: $('#travel_event_mode_of_transportation').val() || 'DRIVING'
 
+    directionsService = new google.maps.DirectionsService();
+    directionsService.route request, (result, status) ->
+      if status == 'OK'
+        $('#travel_event_data').val(JSON.stringify(result))
+        form.submit()
+      else
+        console.log 'error'
 
 
 

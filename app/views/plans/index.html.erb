@@ -2,11 +2,11 @@
   <% @plans.each do |plan| %>
     <div class="row plan">
       <div class="col-md">
-        <%= render 'details', plan: plan %>
-        <div class="actions float-sm-right">
-          <%= link_to t('crud.edit'), edit_plan_path(plan), class: 'btn btn-primary' %>
-          <%= link_to t('crud.delete'), plan_path(plan), method: :delete, class: 'btn btn-danger', data: { confirm: t('crud.confirm') } %>
+        <div class="float-sm-right">
+          <%= link_to t('model.parent_event.add'), new_event_plan_path(plan), class: 'btn btn-primary btn-sm' %>
+          <%= link_to t('crud.delete'), plan_path(plan), method: :delete, class: 'btn btn-danger btn-sm', data: { confirm: t('crud.confirm') } %>
         </div>
+        <%= render 'details', plan: plan %>
       </div>
     </div>
   <% end %>

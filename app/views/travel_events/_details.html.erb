@@ -1,0 +1,10 @@
+<div class="container" id="travel_event-<%= event.id %>" data-directions="<%= event.data.to_json %>">
+  <div>
+    <%= event.origin %> To <%= event.destination %>
+  </div>
+  <div>
+    Estimated travel time: <%= event.duration_in_words %>
+  </div>
+  <div id="map">
+  </div>
+</div>

@@ -1,20 +1,20 @@
 class TravelEvent < ApplicationRecord
   extend Enumerize
 
-  before_save :set_arrival_time
-
-  belongs_to :parent_event
+  belongs_to :plan
 
   enumerize :mode_of_transportation, in: [:car, :bus, :train, :bike, :walk]
 
-  def duration
+  def duration_in_words
     data['routes'].first['legs'].first['duration']['text']
   end
 
-  protected
-    def set_arrival_time
-      api_key = Rails.application.secrets[:google_directions_api_key]
-      response = Faraday.get "https://maps.googleapis.com/maps/api/directions/json?origin=#{origin}&destination=#{destination}&key=#{api_key}"
-      self.data = JSON.parse(response.body)
+  def duration_hash
+    components = duration_in_words.split(' ')
+    if duration_in_words.include? 'day'
+      { days: components.first.to_i, hours: components.third.to_i }
+    else
+      { hours: components.first.to_i, minutes: components.third.to_i }
     end
+  end
 end

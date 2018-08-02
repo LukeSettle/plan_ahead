@@ -1,9 +1,9 @@
-<div class="container travel_event" data-directions="<%= @travel_event.data.to_json %>">
+<div class="container" id="travel_event" data-directions="<%= @travel_event.data.to_json %>">
   <div>
     <%= @travel_event.origin %> To <%= @travel_event.destination %>
   </div>
   <div>
-    Estimated travel time: <%= @travel_event.duration %>
+    Estimated travel time: <%= @travel_event.duration_in_words %>
   </div>
   <div id="map">
   </div>

@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20180802022017) do
   end
 
   create_table "travel_events", force: :cascade do |t|
-    t.bigint "parent_event_id"
+    t.bigint "plan_id"
     t.string "origin"
     t.string "destination"
     t.datetime "departure_time"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20180802022017) do
     t.jsonb "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["parent_event_id"], name: "index_travel_events_on_parent_event_id"
+    t.index ["plan_id"], name: "index_travel_events_on_plan_id"
   end
 
 end

@@ -5,7 +5,7 @@ class ParentEvent < ApplicationRecord
 
   belongs_to :plan
 
-  has_many :travel_events
+  has_one :travel_events
 
   enumerize :kind, in: [:travel, :activity, :lodging]
   enumerize :currency, in: [:us_dollar, :euro, :pound], default: :us_dollar

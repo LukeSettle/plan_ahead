@@ -1,4 +1,4 @@
 <%= simple_form_for @parent_event do |f| %>
   <%= f.hidden_field :plan_id, value: @parent_event.plan_id || params[:plan_id] %>
-  <%= f.input :kind %>
+  <%= f.input :kind, label: t('model.parent_event.kind_explination') %>
 <% end %>

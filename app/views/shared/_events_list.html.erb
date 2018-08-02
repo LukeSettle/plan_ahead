@@ -1,0 +1,6 @@
+<table class="table events">
+  <% events.each do |event| %>
+    <% event_type = event.model_name.singular.split('_').first %>
+    <%= render "#{event_type}_events/details", event: event %>
+  <% end %>
+</div>
