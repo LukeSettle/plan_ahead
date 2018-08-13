@@ -7,7 +7,9 @@
       <%= link_to t('nav.view_plans'), plans_path %>
     </div>
     <div class="col-lg-4 nav-middle">
-      <%= link_to t('application.title'), root_path %>
+      <%= link_to root_path do %>
+        <%= image_tag 'logo', height: 50, width: 100 %>
+      <% end %>
     </div>
     <div class="col-lg-2 nav-button">
       <%= link_to t('nav.manifesto'), '/manifesto.html' %>
