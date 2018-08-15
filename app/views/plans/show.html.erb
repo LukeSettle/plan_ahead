@@ -1,4 +1,5 @@
 <div class="container plan">
+  <%= link_to t('model.parent_event.add'), new_event_plan_path(@plan), class: 'btn btn-primary btn-sm' %>
   <%= render 'details', plan: @plan %>
   <%= render 'shared/events_list', events: @plan.events %>
 </div>

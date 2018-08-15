@@ -12,6 +12,7 @@ class ApplicationController < ActionController::Base
 
   helper_method :format_datetime
   def format_datetime(datetime)
+    return nil
     return unless datetime
     datetime.strftime('%F %I:%M%p')
   end

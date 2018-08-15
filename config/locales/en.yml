@@ -5,6 +5,7 @@ en:
     create: 'Create'
     cancel: 'Cancel'
     confirm: 'Are you sure you want to do this?'
+    search: 'Search'
   nav:
     create_plan: 'Create Plan'
     view_plans: 'View Plans'

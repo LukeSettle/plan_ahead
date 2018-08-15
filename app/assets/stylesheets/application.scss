@@ -3,6 +3,7 @@
 
 $brand-primary: #29deb4;
 $link-color: darken($brand-primary, 10%);
+$border-options: solid 1px #eee;
 
 @import 'modules/*',
         'bootstrap',

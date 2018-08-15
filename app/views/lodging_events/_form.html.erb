@@ -1,9 +1,14 @@
 <div class="container form-group">
-  <%= simple_form_for @event do |f| %>
+  <%= simple_fields_for :search do |search_form| %>
+    <%= search_form.input :location %>
+    <%= search_form.submit t('crud.search'), class: 'btn btn-primary' %>
+  <% end %>
+
+  <%= simple_form_for @lodging_event do |f| %>
     <div class="form-inputs">
-      <%= f.hidden_field :plan_id, value: @event.plan_id || params[:plan_id] %>
+      <%= f.hidden_field :plan_id, value: @lodging_event.plan_id || params[:plan_id] %>
       <% if @attributes.present? %>
-        <% (@event.attributes.keys - @attributes).each do |attribute| %>
+        <% (@lodging_event.attributes.keys - @attributes).each do |attribute| %>
           <%= f.hidden_field attribute %>
         <% end %>
         <% @attributes.each do |attribute| %>
@@ -14,7 +19,6 @@
           <% end %>
         <% end %>
       <% else %>
-        <%= f.input :kind %>
         <%= f.input :link %>
       <% end %>
     </div>

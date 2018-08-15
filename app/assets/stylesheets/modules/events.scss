@@ -2,3 +2,18 @@
   height: 300px;
   width: 300px;
 }
+
+.event-details {
+  border: $border-options;
+  padding: 20px;
+  margin: 5px 0px;
+
+  .icon {
+    font-size: 30px;
+    color: $brand-primary
+  }
+
+  .text {
+    padding-top: 12px;
+  }
+}

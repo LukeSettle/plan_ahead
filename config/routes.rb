@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     post :continue_to_event_creation
   end
   resources :travel_events, except: :index
+  resources :lodging_events, except: :index
   get '/manifesto', to: 'application#manifesto'
   get '/help', to: 'application#help'
   root to: 'application#home'

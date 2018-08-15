@@ -1,0 +1,10 @@
+<div class="event-details travel-event-details" id="travel_event-<%= @lodging_event.id %>">
+  <div class="row">
+    <div class="col-sm-1 icon">
+      <%= fa_icon 'bed', class: 'text-primary display-4' %>
+    </div>
+    <div class="col-sm-11 text">
+      <%= @lodging_event.title %>: <%= @lodging_event.price %>
+    </div>
+  </div>
+</div>

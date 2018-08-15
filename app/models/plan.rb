@@ -17,7 +17,6 @@ class Plan < ApplicationRecord
     total_minutes = 0.minutes
 
     travel_durations.each do |duration|
-      binding.pry
       total_days += duration[:days].to_i.days
       total_hours += duration[:hours].to_i.hours
       total_minutes += duration[:minutes].to_i.minutes
@@ -32,6 +31,6 @@ class Plan < ApplicationRecord
   end
 
   def events
-    TravelEvent.where(plan_id: id)
+    TravelEvent.where(plan_id: id) + LodgingEvent.where(plan_id: id)
   end
 end

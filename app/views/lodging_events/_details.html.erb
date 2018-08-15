@@ -1,0 +1,12 @@
+<div class="event-details travel-event-details" id="travel_event-<%= event.id %>">
+  <div class="row">
+    <div class="col-sm-1 icon">
+      <%= fa_icon 'bed', class: 'text-primary display-4' %>
+    </div>
+    <div class="col-sm-11 text">
+      <%= link_to lodging_event_path(event) do %>
+        <%= event.title %>: <%= event.price %>
+      <% end %>
+    </div>
+  </div>
+</div>

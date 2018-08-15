@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180802022017) do
+ActiveRecord::Schema.define(version: 20180815162048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "lodging_events", force: :cascade do |t|
+    t.string "address"
+    t.string "title"
+    t.float "price"
+    t.string "price_type"
+    t.string "link"
+    t.string "confirmation_number"
+    t.string "currency"
+    t.string "starts_at"
+    t.string "ends_at"
+    t.bigint "plan_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["plan_id"], name: "index_lodging_events_on_plan_id"
+  end
 
   create_table "parent_events", force: :cascade do |t|
     t.string "title"
