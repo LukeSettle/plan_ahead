@@ -17,8 +17,8 @@ module PlanAhead
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.after_initialize do
-      $selenium_driver = Selenium::WebDriver.for :chrome
-    end
+    # config.after_initialize do
+    #   $selenium_driver = Selenium::WebDriver.for :chrome
+    # end
   end
 end
